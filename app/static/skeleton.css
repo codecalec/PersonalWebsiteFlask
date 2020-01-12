@@ -226,14 +226,14 @@
   }
 }
 
-.nav.footer {
+.nav.fab{
   color: blue;
   font-size: 28px;
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
-.nav.footer:hover {
+.nav.fab:hover {
   color: #0fa0ce;
 }
 
