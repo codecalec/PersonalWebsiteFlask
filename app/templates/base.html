@@ -27,10 +27,18 @@
     <!-- Favicon
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- FontAwesome
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script
+      src="https://kit.fontawesome.com/2ee0778459.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="root"></div>
-    <h1>working</h1>
+    {% include 'navbar.html' %} 
+    {% block content %}{% endblock content %} 
+    {% include 'footer.html' %}
   </body>
   <footer>
     <script type="text/javascript">
@@ -48,4 +56,3 @@
     </script>
   </footer>
 </html>
-

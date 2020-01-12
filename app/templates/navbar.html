@@ -1,0 +1,21 @@
+<div class="section header">
+  <div class="container">
+    <div class="row">
+      <div class="one-third column">
+        <a href="/"  {% if home_active %} class = "nav active" {% else %} class="nav" {% endif %} >
+          Home
+        </a>
+      </div>
+      <div class="one-third column">
+        <a href="/blog" {% if blog_active %} class = "nav active" {% else %} class="nav" {% endif %} >
+          Blog
+        </a>
+      </div>
+      <div class="one-third column">
+        <a href="/resume" {% if resume_active %} class = "nav active" {% else %} class="nav" {% endif %} >
+          Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
