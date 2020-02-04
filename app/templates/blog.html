@@ -2,10 +2,9 @@
 {% block content %}
 <div class="section content" style="margin-top: 5%;">
     <div class="container postlist">
+        <h1>Blog Posts</h1>
         {% for post in postlist %}
-            {% block postitem %}
-                {{post.id}}
-            {% endblock postitem %}
+            {% include 'postitem.html' %}
         {% endfor %}
     </div>
 </div>

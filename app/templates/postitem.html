@@ -1,8 +1,6 @@
-{% extends 'blog.html' %}
-{% block postitem %}
 <div class="container preview">
-    <h1><a href='/blog/{{post.id}}'>{{post.title}}</a></h1>
-    <h2>{{post.subtitle}}</h2>
-    <h2>{{post.date}}</h2>
+    <h2><a href='/blog/{{post.id}}'>{{post.title}}</a></h2>
+    <h3>
+        {{post.subtitle}} // {{post.date}}
+    </h3>
 </div>
-{% endblock postitem%}

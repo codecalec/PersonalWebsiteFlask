@@ -2,12 +2,21 @@
 {% block content %}
 <div class="section content" style="margin-top: 5%;">
     <div class="container info">
-        <h1>{{title}}</h1>
-        <h2>{{subtitle}}</h2>
-        <h2>{{date}}</h2>
+        <div class="row">
+            <div class="two columns">
+                <a href="/blog">
+                    <i class="nav fas fa-arrow-left"></i>
+                </a>
+            </div>
+            <div class="ten columns">
+                <!--<h2>{{post.title}}</h2>-->
+                <!--<h5>{{post.subtitle}} // {{post.date}}</h5>-->
+                {% include 'postitem.html' %}
+            </div>
+        </div>
     </div>
     <div class="container post">
-        {{ text | safe }}
+        {{ post.get_text() | safe }}
     </div>
 </div>
 {% endblock content%}
