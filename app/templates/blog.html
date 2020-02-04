@@ -1,7 +1,12 @@
-{% extends "base.html" %} {% block content %}
-<div class="section content" style="margin-top: 20%;">
-  <div class="container">
-    <h1>Watch this space</h1>
-  </div>
+{% extends 'base.html' %}
+{% block content %}
+<div class="section content" style="margin-top: 5%;">
+    <div class="container postlist">
+        {% for post in postlist %}
+            {% block postitem %}
+                {{post.id}}
+            {% endblock postitem %}
+        {% endfor %}
+    </div>
 </div>
 {% endblock content %}
