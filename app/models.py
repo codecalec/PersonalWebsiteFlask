@@ -1,6 +1,7 @@
 from app import db
 from urllib.request import urlopen
-from markdown import markdown
+import markdown
+
 
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -14,6 +15,6 @@ class Post(db.Model):
 
     def get_text(self):
         with urlopen(self.text_location) as f:
-            contents = markdown(f.read().decode("utf-8"))
+            md = markdown.Markdown(extensions=['mdx_math'])
+            contents = md.convert(f.read().decode("utf-8"))
         return contents
-

@@ -31,17 +31,30 @@
     <!-- FontAwesome
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script type="text/javascript">
-        (function() {
-            var css = document.createElement('link');
-            css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
-            css.rel = 'stylesheet';
-            css.type = 'text/css';
-            document.getElementsByTagName('head')[0].appendChild(css);
-        })();
+      (function() {
+        var css = document.createElement('link');
+        css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+        css.rel = 'stylesheet';
+        css.type = 'text/css';
+        document.getElementsByTagName('head')[0].appendChild(css);
+      })();
+    </script>
+
+    <!--MATHJAX-->
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        config: ["MMLorHTML.js"],
+        jax: ["input/TeX", "output/HTML-CSS", "output/NativeMML"]
+      });
     </script>
   </head>
   <body>
-    {% include 'navbar.html' %} {% block content %}{% endblock content %} {%
+    {% include 'navbar.html' %} {% block content %} {% endblock content %} {%
     include 'footer.html' %}
   </body>
 </html>

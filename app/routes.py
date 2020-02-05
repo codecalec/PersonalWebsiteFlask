@@ -1,10 +1,11 @@
 from flask import render_template
-from app import app, db
+from app import app
 from app.models import Post
 
 from sqlalchemy import desc
 from urllib.request import urlopen
-from markdown import markdown
+import markdown
+
 
 @app.route("/")
 @app.route("/home")
@@ -14,17 +15,14 @@ def home():
 
 @app.route("/blog")
 def blog():
-
-    # postlist = Post.query.order_by(Post.date.descending()).all()
     postlist = Post.query.order_by(desc(Post.date)).all()
-    return render_template("blog.html",postlist=postlist, blog_active=True)
+    return render_template("blog.html", postlist=postlist, blog_active=True)
+
 
 @app.route("/blog/<int:post_id>")
 def post(post_id):
     post = Post.query.get(post_id)
-    print(post)
-    return render_template("post.html",post=post, blog_active=True)
-
+    return render_template("post.html", post=post, blog_active=True)
 
 
 @app.route("/resume")
