@@ -11,6 +11,9 @@ black = "*"
 flask = "*"
 markdown = "*"
 gunicorn = "*"
+psycopg2 = "*"
+flask-script = "*"
+flask-migrate = "*"
 
 [requires]
 python_version = "3.8"
