@@ -4,7 +4,7 @@ from app.models import Post
 
 from sqlalchemy import desc
 from urllib.request import urlopen
-import markdown
+from markdown import markdown
 
 
 @app.route("/")
