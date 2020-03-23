@@ -226,7 +226,8 @@
   }
 }
 
-.nav.fab{
+.nav.fab,
+.nav.far {
   color: blue;
   font-size: 28px;
   margin-top: 1%;
@@ -253,8 +254,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   color: #222;
 }
 
@@ -278,11 +278,13 @@ h1 {
   font-size: 4rem;
   line-height: 1.2;
   letter-spacing: -0.1rem;
+  font-style: italic;
 }
 h2 {
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
+  font-style: italic;
 }
 h3 {
   font-size: 3rem;
