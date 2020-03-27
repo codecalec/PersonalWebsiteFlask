@@ -15,6 +15,7 @@ psycopg2 = "*"
 flask-script = "*"
 flask-migrate = "*"
 python-markdown-math = "*"
+flask-caching = "*"
 
 [requires]
 python_version = "3.8"
