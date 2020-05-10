@@ -3,8 +3,6 @@ Personal website created using Flask
 
 It is available at [here](http://www.alexveltman.com)
 
-This repo is archived and outdated since I've ported my site to Python using Flask which can be found [here](https://github.com/codecalec/PersonalWebsiteFlask/)
-
 ## About
 
 This is the source code for my personal website. It was written in Python using Flask. The website can be found [here](www.alexveltman.com).
