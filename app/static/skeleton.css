@@ -28,7 +28,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .section.header {
-  background-color: black;
+  background-color: #202020;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -37,7 +37,7 @@
 }
 
 .section.footer {
-  background-color: black;
+  background-color: #202020;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -228,7 +228,7 @@
 
 .nav.fab,
 .nav.far {
-  color: blue;
+  color: #3399cc;
   font-size: 28px;
   margin-top: 1%;
   margin-bottom: 1%;
@@ -239,7 +239,7 @@
 }
 
 .active {
-  color: blue;
+  color: #3399cc;
 }
 
 /* Base Styles
@@ -255,7 +255,8 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: 'IBM Plex Serif', serif;
-  color: #222;
+  color: #202020;
+  background-color: #F2F2F2;
 }
 
 img {
